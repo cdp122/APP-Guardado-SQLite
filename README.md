@@ -13,28 +13,28 @@ APP2Tips es una aplicación .NET MAUI para guardar, organizar y consultar "tips"
 ## Flujos principales (resumen)
 
 - Pantalla principal: listado de Stacks (tarjetas). Cada tarjeta muestra nombre, descripción corta y acciones (ver, editar, eliminar). Al tocar la tarjeta se abre la lista de tips del stack.
-![Menú Principal](pictures/StacksList.png)
+<p align="center"><img src="pictures/StacksList.png" alt="Menú Principal"></p>
 - Pantalla de detalle del Stack: visualiza la información del stack y lista de tips asociados (tarjetas pequeñas). Desde aquí se puede agregar un tip nuevo.
-![Pantalla de detalle del stack](pictures/StackDetail.png)
+<p align="center"><img src="pictures/StackDetail.png" alt="Pantalla de detalle del stack"></p>
 - Pantalla de lista de Tips: muestra los tips en tarjetas oscuras; la previsualización muestra el título (1 línea), la descripción (máx. 3 líneas con puntos suspensivos) y un bloque de código con espacio suficiente para leer el snippet.
-![Lista de Tips](pictures/TipsList.png)
+<p align="center"><img src="pictures/TipsList.png" alt="Lista de Tips"></p>
 - Pantalla de detalle/edición de Tip: formulario para título, descripción y editor de código. Guardar regresa a la lista.
-![Detalle de Tip](pictures/TipDetail.png)
+<p align="center"><img src="pictures/TipDetail.png" alt="Detalle de Tip"></p>
 
 ## Ejemplo de uso
 
 1. Creo un Stack llamado "MAUI" con descripción breve.
-![Creación del stack](pictures/StackDetail.png)
+<p align="center"><img src="pictures/StackDetail.png" alt="Creación del stack"></p>
 2. En caso de error se puede editar el stack.
-![Edición del stack](pictures/EdicionStack.png)
+<p align="center"><img src="pictures/EdicionStack.png" alt="Edición del stack"></p>
 3. Si necesita, puede borrar el stack.
-![Borrado del Stack](pictures/BorrarStack.png)
+<p align="center"><img src="pictures/BorrarStack.png" alt="Borrado del Stack"></p>
 4. Dentro del stack creo un tip titulado "Instalar plantilla MAUI" con una descripción corta y en Código escribo comandos (por ejemplo: dotnet new maui -n MiApp).
-![Creación del TIP](pictures/TipDetail.png)
+<p align="center"><img src="pictures/TipDetail.png" alt="Creación del TIP"></p>
 5. En caso de error se puede editar el tip.
-![Edición del TIP](pictures/EditarTip.png)
+<p align="center"><img src="pictures/EditarTip.png" alt="Edición del TIP"></p>
 6. Si necesita, puede borrar el tip.
-![Borrado del TIP](pictures/BorrarTip.png)
+<p align="center"><img src="pictures/BorrarTip.png" alt="Borrado del TIP"></p>
 
 ## Estructura del proyecto (relevante para desarrolladores)
 
