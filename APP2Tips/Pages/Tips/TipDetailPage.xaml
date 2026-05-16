@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP2Tips.Pages.Tips.TipDetailPage"
+             Title="Detalle Tip">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Entry x:Name="TituloEntry" Placeholder="Título del Tip" />
+                <Entry x:Name="DescripcionEntry" Placeholder="Descripción breve" />
+                <Editor x:Name="CodigoEditor" HeightRequest="200" FontFamily="Consolas" />
+
+                <Button Text="Guardar" Clicked="OnSaveClicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

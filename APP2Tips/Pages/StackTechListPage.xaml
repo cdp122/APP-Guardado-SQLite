@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP2Tips.Pages.StackTechListPage"
+             Title="Stacks">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Button Text="Agregar Stack" Clicked="OnAddStackClicked" />
+
+            <CollectionView x:Name="StacksCollection" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,5" Padding="10" CornerRadius="8" BackgroundColor="{StaticResource Gray950}">
+                            <StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnStackCardTapped" CommandParameter="{Binding ID}" />
+                                </StackLayout.GestureRecognizers>
+
+                                <Label Text="{Binding NombreStack}" FontAttributes="Bold" FontSize="16" TextColor="{StaticResource White}" LineBreakMode="TailTruncation" MaxLines="1" />
+                                <Label Text="{Binding DescripcionStack}" LineBreakMode="TailTruncation" MaxLines="2" TextColor="{StaticResource Gray300}" />
+
+                                <Grid ColumnDefinitions="*,Auto,Auto,Auto" ColumnSpacing="8" Margin="0,8,0,0">
+                                    <Label Grid.Column="0" Text="" />
+
+                                    <Button Grid.Column="1" Text="Ver" Clicked="OnViewStackClicked" CommandParameter="{Binding ID}" />
+                                    <Button Grid.Column="2" Text="Editar" Clicked="OnEditStackClicked" CommandParameter="{Binding ID}" />
+                                    <Button Grid.Column="3" Text="Eliminar" Clicked="OnDeleteStackClicked" CommandParameter="{Binding ID}" />
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

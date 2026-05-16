@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="APP2Tips.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:APP2Tips"
+    xmlns:pages="clr-namespace:APP2Tips.Pages"
+    Title="APP2Tips">
+
+  <!-- Initial Shell content: use page directly — Shell provides its own navigation -->
+  <ShellContent Title="Stacks">
+    <ShellContent.ContentTemplate>
+      <DataTemplate>
+        <pages:StackTechListPage />
+      </DataTemplate>
+    </ShellContent.ContentTemplate>
+  </ShellContent>
+
+  <!-- Routes are registered in AppShell code-behind -->
+
+</Shell>

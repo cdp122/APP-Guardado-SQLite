@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP2Tips.Pages.StackTechDetailPage"
+             Title="Detalle del Stack">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Entry x:Name="NombreEntry" Placeholder="Nombre del Stack" />
+            <Editor x:Name="DescripcionEditor" Placeholder="Descripción del Stack" HeightRequest="100" />
+
+            <Button x:Name="SaveButton" Text="Guardar" Clicked="OnSaveClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
