@@ -13,28 +13,28 @@ APP2Tips es una aplicación .NET MAUI para guardar, organizar y consultar "tips"
 ## Flujos principales (resumen)
 
 - Pantalla principal: listado de Stacks (tarjetas). Cada tarjeta muestra nombre, descripción corta y acciones (ver, editar, eliminar). Al tocar la tarjeta se abre la lista de tips del stack.
-![Menú Principal](AssetsReadme/StacksList.png)
+![Menú Principal](pictures/StacksList.png)
 - Pantalla de detalle del Stack: visualiza la información del stack y lista de tips asociados (tarjetas pequeñas). Desde aquí se puede agregar un tip nuevo.
-![Pantalla de detalle del stack](AssetsReadme/StackDetail.png)
+![Pantalla de detalle del stack](pictures/StackDetail.png)
 - Pantalla de lista de Tips: muestra los tips en tarjetas oscuras; la previsualización muestra el título (1 línea), la descripción (máx. 3 líneas con puntos suspensivos) y un bloque de código con espacio suficiente para leer el snippet.
-![Lista de Tips](AssetsReadme/TipsList.png)
+![Lista de Tips](pictures/TipsList.png)
 - Pantalla de detalle/edición de Tip: formulario para título, descripción y editor de código. Guardar regresa a la lista.
-![Detalle de Tip](AssetsReadme/TipDetail.png)
+![Detalle de Tip](pictures/TipDetail.png)
 
 ## Ejemplo de uso
 
 1. Creo un Stack llamado "MAUI" con descripción breve.
-![Creación del stack](AssetsReadme/StackDetail.png)
+![Creación del stack](pictures/StackDetail.png)
 2. En caso de error se puede editar el stack.
-![Edición del stack](AssetsReadme/EdicionStack.png)
+![Edición del stack](pictures/EdicionStack.png)
 3. Si necesita, puede borrar el stack.
-![Borrado del Stack](AssetsReadme/BorrarStack.png)
+![Borrado del Stack](pictures/BorrarStack.png)
 4. Dentro del stack creo un tip titulado "Instalar plantilla MAUI" con una descripción corta y en Código escribo comandos (por ejemplo: dotnet new maui -n MiApp).
-![Creación del TIP](AssetsReadme/TipDetail.png)
+![Creación del TIP](pictures/TipDetail.png)
 5. En caso de error se puede editar el tip.
-![Edición del TIP](AssetsReadme/EditarTip.png)
+![Edición del TIP](pictures/EditarTip.png)
 6. Si necesita, puede borrar el tip.
-![Borrado del TIP](AssetsReadme/BorrarTip.png)
+![Borrado del TIP](pictures/BorrarTip.png)
 
 ## Estructura del proyecto (relevante para desarrolladores)
 
